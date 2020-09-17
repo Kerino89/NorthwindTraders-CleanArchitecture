@@ -14,6 +14,7 @@ using Northwind.Persistence;
 using Northwind.Application;
 using Northwind.Application.Common.Interfaces;
 using Northwind.WebUI.Common;
+using Northwind.WebUI.Controllers;
 using Northwind.WebUI.Services;
 using Notifications;
 
@@ -52,6 +53,7 @@ namespace Northwind.WebUI
 
             services
                 .AddControllersWithViews()
+                .AddApplicationPart(typeof(CategoriesController).Assembly)
                 .AddNewtonsoftJson()
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<INorthwindDbContext>());
 

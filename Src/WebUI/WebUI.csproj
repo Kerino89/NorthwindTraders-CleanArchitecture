@@ -49,6 +49,7 @@
     <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Controllers\Controllers.csproj" />
     <ProjectReference Include="..\DomainServices\DomainServices.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\Notifications\Notifications.csproj" />
