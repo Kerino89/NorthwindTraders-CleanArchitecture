@@ -20,6 +20,8 @@
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Infrastructure.Interfaces\Infrastructure.Interfaces.csproj" />
+    <ProjectReference Include="..\Notifications.Interfaces\Notifications.Interfaces.csproj" />
+    <ProjectReference Include="..\Persistence.Interfaces\Persistence.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

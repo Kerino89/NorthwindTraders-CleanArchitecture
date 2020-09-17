@@ -15,6 +15,7 @@ using Northwind.Application;
 using Northwind.Application.Common.Interfaces;
 using Northwind.WebUI.Common;
 using Northwind.WebUI.Services;
+using Notifications;
 
 namespace Northwind.WebUI
 {
@@ -34,16 +35,18 @@ namespace Northwind.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDomainServices();
+
+            services.AddApplication();
+            services.AddApplicationServices();
+
             services.AddInfrastructure(Configuration, Environment);
             services.AddPersistence(Configuration);
-            services.AddApplication();
-            services.AddDomainServices();
-            services.AddApplicationServices();
+            services.AddNotifications();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
 
             services.AddHealthChecks()
                 .AddDbContextCheck<NorthwindDbContext>();
-
-            services.AddScoped<ICurrentUserService, CurrentUserService>();
 
             services.AddHttpContextAccessor();
 

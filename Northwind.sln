@@ -37,13 +37,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "Tests\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI.IntegrationTests", "Tests\WebUI.IntegrationTests\WebUI.IntegrationTests.csproj", "{22B85BF9-27F9-4C0C-AB6D-C05014C022E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.IntegrationTests", "Tests\Persistence.IntegrationTests\Persistence.IntegrationTests.csproj", "{FCFF633E-3675-41FE-8A2C-18009C744C00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence.IntegrationTests", "Tests\Persistence.IntegrationTests\Persistence.IntegrationTests.csproj", "{FCFF633E-3675-41FE-8A2C-18009C744C00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainServices.Interfaces", "Src\DomainServices.Interfaces\DomainServices.Interfaces.csproj", "{5ACC8722-78AC-44DA-B6A2-95871A9D0376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainServices.Interfaces", "Src\DomainServices.Interfaces\DomainServices.Interfaces.csproj", "{5ACC8722-78AC-44DA-B6A2-95871A9D0376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainServices", "Src\DomainServices\DomainServices.csproj", "{A3ADCB5F-1084-4F12-82A8-D6F22034C398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainServices", "Src\DomainServices\DomainServices.csproj", "{A3ADCB5F-1084-4F12-82A8-D6F22034C398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Interfaces", "Src\Infrastructure.Interfaces\Infrastructure.Interfaces.csproj", "{6E464F0F-1A57-4E43-93D1-1138CD3A473D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.Interfaces", "Src\Infrastructure.Interfaces\Infrastructure.Interfaces.csproj", "{6E464F0F-1A57-4E43-93D1-1138CD3A473D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Utils", "0 Utils", "{1A85E9CC-177D-44B3-B9DF-4FB9B046269F}"
 EndProject
@@ -51,9 +51,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Domain", "1 Domain", "{B4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Infrastructure Interfaces", "2 Infrastructure Interfaces", "{D97166D6-1A95-45C4-A249-51EA25AE6184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices.Interfaces", "Src\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj", "{2E3D54F6-654D-4264-AD59-74CACF438CB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServices.Interfaces", "Src\ApplicationServices.Interfaces\ApplicationServices.Interfaces.csproj", "{2E3D54F6-654D-4264-AD59-74CACF438CB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices", "Src\ApplicationServices\ApplicationServices.csproj", "{32B836E8-98CC-43FE-9B34-1174074F888D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServices", "Src\ApplicationServices\ApplicationServices.csproj", "{32B836E8-98CC-43FE-9B34-1174074F888D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence.Interfaces", "Src\Persistence.Interfaces\Persistence.Interfaces.csproj", "{EBDBA972-BA06-4312-8F2D-8214660902F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifications", "Src\Notifications\Notifications.csproj", "{2234D9CA-EDD5-488B-9176-991ECC38F360}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notifications.Interfaces", "Src\Notifications.Interfaces\Notifications.Interfaces.csproj", "{01F9EF09-1867-4359-BE46-3595BEC7162A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +127,18 @@ Global
 		{32B836E8-98CC-43FE-9B34-1174074F888D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32B836E8-98CC-43FE-9B34-1174074F888D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32B836E8-98CC-43FE-9B34-1174074F888D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDBA972-BA06-4312-8F2D-8214660902F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDBA972-BA06-4312-8F2D-8214660902F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDBA972-BA06-4312-8F2D-8214660902F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDBA972-BA06-4312-8F2D-8214660902F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2234D9CA-EDD5-488B-9176-991ECC38F360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2234D9CA-EDD5-488B-9176-991ECC38F360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2234D9CA-EDD5-488B-9176-991ECC38F360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2234D9CA-EDD5-488B-9176-991ECC38F360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F9EF09-1867-4359-BE46-3595BEC7162A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F9EF09-1867-4359-BE46-3595BEC7162A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F9EF09-1867-4359-BE46-3595BEC7162A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F9EF09-1867-4359-BE46-3595BEC7162A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +165,9 @@ Global
 		{D97166D6-1A95-45C4-A249-51EA25AE6184} = {4B785E7E-2F35-4198-BD73-D2B861E5518A}
 		{2E3D54F6-654D-4264-AD59-74CACF438CB0} = {0FEB6ADF-29FD-48CE-AE0F-9E19E9209795}
 		{32B836E8-98CC-43FE-9B34-1174074F888D} = {0FEB6ADF-29FD-48CE-AE0F-9E19E9209795}
+		{EBDBA972-BA06-4312-8F2D-8214660902F4} = {D97166D6-1A95-45C4-A249-51EA25AE6184}
+		{2234D9CA-EDD5-488B-9176-991ECC38F360} = {1EC1EEFF-3888-4125-9229-623C564F3E7E}
+		{01F9EF09-1867-4359-BE46-3595BEC7162A} = {D97166D6-1A95-45C4-A249-51EA25AE6184}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D5D0CA3-C6B8-436C-82B0-39820C8A13FA}
