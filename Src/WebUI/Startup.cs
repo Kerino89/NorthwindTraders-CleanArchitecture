@@ -1,4 +1,5 @@
 using System.Text;
+using ApplicationServices;
 using DomainServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -37,6 +38,7 @@ namespace Northwind.WebUI
             services.AddPersistence(Configuration);
             services.AddApplication();
             services.AddDomainServices();
+            services.AddApplicationServices();
 
             services.AddHealthChecks()
                 .AddDbContextCheck<NorthwindDbContext>();
