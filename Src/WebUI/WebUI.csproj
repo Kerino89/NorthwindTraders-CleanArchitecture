@@ -48,6 +48,7 @@
     <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
     <ProjectReference Include="..\Application\UseCases.csproj" />
     <ProjectReference Include="..\Common\Utils.csproj" />
+    <ProjectReference Include="..\Controllers\Controllers.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\Persistence\Persistence.csproj" />
   </ItemGroup>
